@@ -1,0 +1,11 @@
+version: "1.0"
+
+services:
+  justingpt-vue:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: justingpt-vue
+    ports:
+      - "8080:8080"
+    tty: true
