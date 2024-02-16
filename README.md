@@ -7,7 +7,7 @@ This is the vue frontend (under development) for JustinGPT, a hobby website with
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for development.  Default Port 8080
 ```
 npm run serve
 ```
