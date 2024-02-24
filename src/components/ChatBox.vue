@@ -43,7 +43,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .chatbot {
   width: 300px;
   border: 1px solid #ccc;
@@ -64,6 +64,7 @@ export default {
 .message-content {
   padding: 8px 10px;
   border-radius: 5px;
+  color: black;
 }
 
 .user .message-content {
@@ -80,5 +81,7 @@ export default {
   padding: 10px;
   border: none;
   outline: none;
+  color: white;
+  font-weight: bold;
 }
 </style>
