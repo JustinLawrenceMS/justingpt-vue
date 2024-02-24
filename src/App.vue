@@ -1,3 +1,4 @@
+<!-- todo: fix indents.  Fix disappearing space bar on chatbox input -->
 <template>
   <div id="app">
 			<header id="header">
@@ -38,7 +39,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
 }
 </style>
