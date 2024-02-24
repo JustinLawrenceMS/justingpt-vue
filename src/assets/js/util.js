@@ -2,13 +2,11 @@ import jQuery from 'jquery'
 
 window.$ = window.jQuery = jQuery;
 
-import browser from './browser.min.js'
 import breakpoints from './breakpoints.min.js'
 import * as main from './main.js'
 
 
 window.main = main;
-window.browser = browser;
 window.breakpoints = breakpoints;
 
 (function($) {

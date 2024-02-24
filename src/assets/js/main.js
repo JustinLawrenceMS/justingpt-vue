@@ -9,13 +9,11 @@ import jQuery from 'jquery'
 
 window.$ = window.jQuery = jQuery;
 
-import browser from './browser.min.js'
 import breakpoints from './breakpoints.min.js'
 import * as util from './util.js'
 
 
 window.util = util;
-window.browser = browser;
 window.breakpoints = breakpoints;
 
 let main = (function($) {
@@ -55,11 +53,11 @@ let main = (function($) {
 			});
 
 		// Fix: Placeholder polyfill.
-			$form.placeholder();
+			//$form.placeholder();
 
 	// Touch?
-		if (browser.mobile)
-			$body.addClass('is-touch');
+		//if (browser.mobile)
+		//	$body.addClass('is-touch');
 
 	// Main.
 		(function() {
