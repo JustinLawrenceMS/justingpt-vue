@@ -9,13 +9,14 @@ RUN apt-get install --yes build-essential
 RUN apt-get install --yes git
 RUN apt-get install --yes vim
 
-
 RUN mkdir /var/www
 RUN mkdir /var/www/html
 RUN mkdir /var/www/html/justingpt-vue
 
-COPY . /var/www/html/justingpt-vue
+COPY . .
 
-RUN cd /var/www/html/justingpt-vue; npm install
+RUN npm install; npm run build;
+
+CMD ["npm", "run", "serve"]
 
 ## TODO install vue cli
