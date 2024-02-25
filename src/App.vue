@@ -13,8 +13,8 @@
 			</ul>
 		</nav>
 	</header>
-  <ChatBox/>
-</div>
+        <ChatBox/>
+  </div>
 </template>
 
 <script>
@@ -22,7 +22,6 @@ import ChatBox from './components/ChatBox.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     ChatBox
   }
 }
