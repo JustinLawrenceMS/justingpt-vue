@@ -1,10 +1,10 @@
 <template>
   <div class="chatbot">
-    <div class="chat-container" ref="chatContainer">
+    <perfect-scrollbar class="chat-container" ref="chatContainer">
       <div v-for="(message, index) in messages" :key="index" class="message" :class="{ 'user': message.from === 'user', 'bot': message.from === 'bot' }">
         <div class="message-content">{{ message.content }}</div>
       </div>
-    </div>
+    </perfect-scrollbar>
     <input type="text" v-model="userMessage" @keyup.enter="sendMessage" class="message-input" placeholder="Type your message...">
   </div>
 </template>
