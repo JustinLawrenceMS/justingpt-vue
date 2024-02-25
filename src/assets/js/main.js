@@ -290,7 +290,6 @@ let main = (function($) {
 									break;
 
 							// Space, Right.
-								case 32:
 								case 39:
 									newPos = pos + 1;
 									break;
