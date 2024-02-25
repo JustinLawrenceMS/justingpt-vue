@@ -45,16 +45,21 @@ export default {
 
 <style scoped>
 .chatbot {
-  width: 300px;
+  width: 30vw;
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .chat-container {
-  height: 300px;
+  height: 60vh;
   overflow-y: auto;
   padding: 10px;
+  background-color: #fff;
+  border-color: #666;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .message {
@@ -81,7 +86,8 @@ export default {
   padding: 10px;
   border: none;
   outline: none;
-  color: white;
   font-weight: bold;
+  background-color: #fff;
+  color: #2b2b2b;
 }
 </style>

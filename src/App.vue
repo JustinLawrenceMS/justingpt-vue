@@ -13,8 +13,8 @@
 			</ul>
 		</nav>
 	</header>
-  <ChatBox/>
-</div>
+        <ChatBox/>
+  </div>
 </template>
 
 <script>
