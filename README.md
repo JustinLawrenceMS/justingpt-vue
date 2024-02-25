@@ -30,3 +30,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 This is the first iteration of the vue frontend
 
 ![image](https://github.com/JustinLawrenceMS/justingpt-vue/assets/43936909/b9164250-c1b1-4445-bbfd-7fffc77e441f)
+
+This is the second iteration of the vue frontend
+
+![image](https://github.com/JustinLawrenceMS/justingpt-vue/assets/43936909/5af395fe-15ae-43fa-8e00-1d7945222566)
+

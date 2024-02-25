@@ -22,7 +22,6 @@ import ChatBox from './components/ChatBox.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     ChatBox
   }
 }

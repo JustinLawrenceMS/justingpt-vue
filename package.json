@@ -13,7 +13,8 @@
     "jquery": "^3.7.1",
     "module": "^0.0.1",
     "vue": "^3.2.13",
-    "vue-plugin-load-script": "^2.1.1"
+    "vue-plugin-load-script": "^2.1.1",
+    "vue3-perfect-scrollbar": "^1.6.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
