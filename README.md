@@ -24,3 +24,9 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Changelog
+
+This is the first iteration of the vue frontend
+
+![image](https://github.com/JustinLawrenceMS/justingpt-vue/assets/43936909/b9164250-c1b1-4445-bbfd-7fffc77e441f)
