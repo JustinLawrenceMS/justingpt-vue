@@ -9,7 +9,7 @@
         :ref="setMessageRef(index)"
       >
         <div class="message-content">
-          <span class="inner-content">{{ message.content }}</span>
+          <span>{{ message.content }}</span>
         </div>
       </div>
     </perfect-scrollbar>
@@ -40,8 +40,6 @@ export default {
       };
     }
 
-
-
     function updateMessageWidth(index) {
       const messageRef = messageRefs.value[index];
       if (messageRef) {
@@ -67,7 +65,7 @@ export default {
 
     return {
       messages,
-      setMessageRef,
+      setMessageRef
     };
   },
   data() {
@@ -106,12 +104,17 @@ export default {
   border: 1px solid #ccc;
   border-radius: 30px;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .chat-container {
-  height: 300px;
+  height: 60vh;
   overflow-y: auto;
   padding: 10px;
+  background-color: #fff;
+  border-color: #666;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .message {
@@ -152,12 +155,10 @@ export default {
   padding: 10px;
   border: none;
   outline: none;
-  color: white;
   font-weight: bold;
   background-color: #fff;
   color: #2b2b2b;
 }
-
 @media only screen and (max-device-width: 600px) {
   .chatbot {
     width: 100%;
@@ -175,5 +176,4 @@ export default {
     height: 60vh;
     overflow-y: auto;
   }
-}
 </style>

@@ -30,3 +30,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 This is the first iteration of the vue frontend
 
 ![image](https://github.com/JustinLawrenceMS/justingpt-vue/assets/43936909/b9164250-c1b1-4445-bbfd-7fffc77e441f)
+
+This is the second iteration of the vue frontend
+
+![image](https://github.com/JustinLawrenceMS/justingpt-vue/assets/43936909/5af395fe-15ae-43fa-8e00-1d7945222566)
+
+Third iteration. Text bubbles adjust width dynamically based on string-length
+
+![image](https://github.com/JustinLawrenceMS/justingpt-vue/assets/43936909/5ade5156-73b9-448c-8ee8-b5c3297f8f42)
+
+
