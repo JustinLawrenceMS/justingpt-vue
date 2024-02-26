@@ -9,7 +9,7 @@
         :ref="setMessageRef(index)"
       >
         <div class="message-content">
-          <span class="message-span">{{ message.content }}</span>
+          <span class="message-span kode-mono-justingpt">{{ message.content }}</span>
         </div>
       </div>
     </perfect-scrollbar>
@@ -108,7 +108,7 @@ export default {
 }
 
 .chat-container {
-  height: 60vh;
+  height: 48vh;
   overflow-y: auto;
   padding: 10px;
   background-color: #fff;
@@ -162,9 +162,17 @@ export default {
   background-color: #fff;
   color: #2b2b2b;
 }
+
+.kode-mono-justingpt {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
 @media only screen and (max-device-width: 600px) {
   .chatbot {
-    width: 100%;
+    width:  90%;
   }
   .chat-container {
     height: auto;
@@ -172,12 +180,12 @@ export default {
 }
 @media only screen and (max-device-width: 1000px) {
   .chatbot {
-    width: 100%;
+    width:  90%;
     overflow: hidden;
   }
   .chat-container {
 
-    height: 60vh;
+    height: 48vh;
     overflow-y: auto;
   }
 }
