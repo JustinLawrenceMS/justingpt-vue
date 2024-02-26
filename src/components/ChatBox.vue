@@ -9,7 +9,7 @@
         :ref="setMessageRef(index)"
       >
         <div class="message-content">
-          <span>{{ message.content }}</span>
+          <span class="message-span">{{ message.content }}</span>
         </div>
       </div>
     </perfect-scrollbar>
@@ -134,7 +134,10 @@ export default {
 }
 
 .message-content {
-  padding: 8px 10px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: .5em;
+  padding-left: .5em;
   color: black;
   align-text: center;
 }
