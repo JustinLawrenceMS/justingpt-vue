@@ -173,7 +173,9 @@ export default {
     overflow: hidden;
   }
   .chat-container {
+
     height: 60vh;
     overflow-y: auto;
   }
+}
 </style>
