@@ -9,7 +9,7 @@
         :ref="setMessageRef(index)"
       >
         <div class="message-content">
-          <span>{{ message.content }}</span>
+          <span class="inner-content">{{ message.content }}</span>
         </div>
       </div>
     </perfect-scrollbar>
@@ -24,38 +24,50 @@
 </template>
 
 <script>
-import { ref, onMounted, watch } from 'vue';
+import { ref, onMounted, watch } from "vue";
 
 export default {
   setup() {
     const messageRefs = ref([]);
-    const messages = ref([{ content: "Hello! How can I help you today?", from: "bot" }]);
+    const messages = ref([
+      { content: "Hello! How can I help you today?", from: "bot" },
+    ]);
 
     function setMessageRef(index) {
-      return el => {
+      return (el) => {
         messageRefs.value[index] = el;
         updateMessageWidth(index);
       };
     }
 
+
+
     function updateMessageWidth(index) {
       const messageRef = messageRefs.value[index];
       if (messageRef) {
-        messageRef.style.width = `${Math.ceil(messageRef.children[0].children[0].getBoundingClientRect().width)+10}px`;
+        messageRef.style.width = `${
+          Math.ceil(
+            messageRef.children[0].children[0].getBoundingClientRect().width
+          ) + 30
+        }px`;
       }
     }
 
     onMounted(() => {
-      watch(messages, () => {
-        messageRefs.value.forEach((_, index) => {
-          updateMessageWidth(index);
-        });
-      }, { immediate: true });
+      watch(
+      messages,
+          () => {
+          messageRefs.value.forEach((_, index) => {
+            updateMessageWidth(index);
+          });
+        },
+        { immediate: true }
+      );
     });
 
     return {
       messages,
-      setMessageRef
+      setMessageRef,
     };
   },
   data() {
@@ -72,10 +84,13 @@ export default {
       // Simulate bot response (replace this with actual bot response)
       this.messages.push({ content: "This is a bot response.", from: "bot" });
       this.userMessage = ""; // Clear input
-      this.scrollToBottom(); // Scroll to bottom of chat
+      this.$nextTick(() => {
+        this.scrollToBottom();
+      });
     },
     scrollToBottom() {
-      this.$refs.chatContainer.scrollTop = this.$refs.chatContainer.scrollHeight;
+      this.$refs.chatContainer.$el.scrollTop =
+        this.$refs.chatContainer.$el.scrollHeight;
     },
   },
   mounted() {
@@ -85,10 +100,11 @@ export default {
 </script>
 
 <style scoped>
+/* desktop and default styles */
 .chatbot {
   width: 20vw;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 30px;
   overflow: hidden;
 }
 
@@ -116,17 +132,19 @@ export default {
 
 .message-content {
   padding: 8px 10px;
-  border-radius: 5px;
   color: black;
+  align-text: center;
 }
 
 .user .message-content {
-  background-color: #007bff;
+  background-color: var(--light-blue);
   color: #fff;
+  border-radius: 15%;
 }
 
 .bot .message-content {
-  background-color: #f0f0f0;
+  background-color: var(--light-green);
+  border-radius: 60%;
 }
 
 .message-input {
@@ -139,7 +157,23 @@ export default {
   background-color: #fff;
   color: #2b2b2b;
 }
-::placeholder {
-  color: #2b2b2b;
+
+@media only screen and (max-device-width: 600px) {
+  .chatbot {
+    width: 100%;
+  }
+  .chat-container {
+    height: auto;
+  }
+}
+@media only screen and (max-device-width: 1000px) {
+  .chatbot {
+    width: 100%;
+    overflow: hidden;
+  }
+  .chat-container {
+    height: 60vh;
+    overflow-y: auto;
+  }
 }
 </style>
