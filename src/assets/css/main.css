@@ -571,23 +571,7 @@ input, select, textarea {
 			border-radius: 100%;
 		}
 
-	::-webkit-input-placeholder {
-		opacity: 1.0;
-	}
-
-	:-moz-placeholder {
-		opacity: 1.0;
-	}
-
-	::-moz-placeholder {
-		opacity: 1.0;
-	}
-
-	:-ms-input-placeholder {
-		opacity: 1.0;
-	}
-
-	.formerize-placeholder {
+		.formerize-placeholder {
 		opacity: 1.0;
 	}
 
@@ -648,22 +632,6 @@ input, select, textarea {
 	input[type="radio"]:focus + label:before {
 		border-color: #ffffff;
 		box-shadow: 0 0 0 1px #ffffff;
-	}
-
-	::-webkit-input-placeholder {
-		color: rgba(255, 255, 255, 0.75) !important;
-	}
-
-	:-moz-placeholder {
-		color: rgba(255, 255, 255, 0.75) !important;
-	}
-
-	::-moz-placeholder {
-		color: rgba(255, 255, 255, 0.75) !important;
-	}
-
-	:-ms-input-placeholder {
-		color: rgba(255, 255, 255, 0.75) !important;
 	}
 
 	.formerize-placeholder {
