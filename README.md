@@ -39,4 +39,9 @@ Third iteration. Text bubbles adjust width dynamically based on string-length
 
 ![image](https://github.com/JustinLawrenceMS/justingpt-vue/assets/43936909/5ade5156-73b9-448c-8ee8-b5c3297f8f42)
 
+Final status: incorporated into UpGrokk.com <a target="_blank" href="https://github.com/JustinLawrenceMS/upgrokk.com">https://github.com/JustinLawrenceMS/upgrokk.com</a>
+
+![image](https://github.com/JustinLawrenceMS/justingpt-vue/assets/43936909/21fdbfcf-98da-442e-bed6-26014283f816)
+
+
 
